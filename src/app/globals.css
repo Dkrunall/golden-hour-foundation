@@ -1,26 +1,109 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&family=Nunito+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --gradient-primary: linear-gradient(135deg, #ff4d4d 0%, #dc2626 100%);
+    --gradient-secondary: linear-gradient(135deg, #1774b1 0%, #1d4ed8 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(255, 77, 77, 0.9) 0%, rgba(23, 116, 177, 0.8) 100%);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-glow: 0 0 20px rgba(255, 77, 77, 0.3);
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-nunito-sans), 'Nunito Sans', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Font Family Utilities */
+  .font-heading {
+    font-family: var(--font-space-grotesk), 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  }
+  
+  .font-body {
+    font-family: var(--font-nunito-sans), 'Nunito Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  * {
+    @apply border-gray-200;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+  
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-lg border border-white/20 shadow-xl rounded-2xl;
+  }
+  
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white rounded-xl transition-all duration-300 transform hover:scale-105 active:scale-95 focus:outline-none focus:ring-4 focus:ring-primary-500/50;
+    background: var(--gradient-secondary);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
+  }
+  
+  .btn-primary:hover {
+    box-shadow: var(--shadow-xl), 0 0 30px rgba(220, 38, 38, 0.4);
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-primary-700 bg-white border-2 border-primary-500 rounded-xl transition-all duration-300 transform hover:scale-105 hover:bg-primary-50 active:scale-95 focus:outline-none focus:ring-4 focus:ring-primary-500/30;
+  }
+  
+  .card-modern {
+    @apply bg-white rounded-3xl p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .card-modern:hover {
+    box-shadow: var(--shadow-xl), 0 25px 50px rgba(0, 0, 0, 0.15);
+  }
+  
+  .hero-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(255, 77, 77, 0.1) 0%, transparent 25%),
+      radial-gradient(circle at 75% 75%, rgba(23, 116, 177, 0.1) 0%, transparent 25%);
+  }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Enhanced glassmorphism utilities */
+  .glass-subtle {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+  
+  .glass-medium {
+    @apply bg-white/10 backdrop-blur-2xl border border-white/20;
+  }
+  
+  .glass-strong {
+    @apply bg-white/20 backdrop-blur-3xl border border-white/30;
+  }
 }
