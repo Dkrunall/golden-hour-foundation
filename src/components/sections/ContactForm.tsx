@@ -72,7 +72,7 @@ export function ContactForm() {
               </motion.div>
               
               <h2 className="font-heading text-3xl lg:text-4xl font-bold mb-4">
-                Let's Start a Conversation
+                Let&apos;s Start a Conversation
               </h2>
               <p className="font-body text-lg text-primary-100">
                 We&apos;d love to hear from you. Fill out the form below and we&apos;ll get back to you as soon as possible.

@@ -77,7 +77,7 @@ export function CampsList() {
             Want to Organize a Free Camp in Your Area?
           </h3>
           <p className="text-gray-600 mb-4">
-            We're always looking to expand our reach and help more communities stay prepared for emergencies.
+            We&apos;re always looking to expand our reach and help more communities stay prepared for emergencies.
           </p>
           <a
             href="/contact"

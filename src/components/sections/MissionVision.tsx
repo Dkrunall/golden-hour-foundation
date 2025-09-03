@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Target, Eye, Heart, Users, GraduationCap, Shield, CheckCircle } from "lucide-react";
 
@@ -60,7 +59,7 @@ export function MissionVision() {
             <p className="font-body text-lg text-gray-600 leading-relaxed mb-6">
               Golden Hour Foundation is dedicated to empowering individuals and communities 
               with essential first aid knowledge and emergency response skills. We believe 
-              that proper training during the critical "golden hour" can mean the difference 
+              that proper training during the critical &ldquo;golden hour&rdquo; can mean the difference 
               between life and death.
             </p>
             <p className="font-body text-lg text-gray-600 leading-relaxed">
