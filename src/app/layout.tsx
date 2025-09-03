@@ -38,7 +38,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://goldenhour.org",
     siteName: "Golden Hour Foundation",
     title: "Golden Hour Foundation - Save Golden Hour, Save Life",
     description: "Empowering communities with first aid and CPR awareness since 2018.",
