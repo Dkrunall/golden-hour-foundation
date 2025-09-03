@@ -341,7 +341,7 @@ export function Footer() {
                   >
                     <div className="font-body text-gray-600 flex items-center group">
                       <ArrowRight className="w-4 h-4 mr-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200" />
-                      St. Xavier's College, Mumbai
+                      St. Xavier&apos;s College, Mumbai
                     </div>
                   </motion.li>
                 </ul>

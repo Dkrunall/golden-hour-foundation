@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function ContactHero() {
@@ -42,7 +42,7 @@ export function ContactHero() {
             >
               <Image
                 src={image}
-                alt={`Contact Background ${index + 1}`}
+                alt={"Contact Background " + (index + 1)}
                 fill
                 className="object-cover"
                 priority={index === 0}
@@ -98,7 +98,7 @@ export function ContactHero() {
             transition={{ delay: 0.7, duration: 0.8 }}
             className="font-body text-xl lg:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed"
           >
-            We're here to help you learn life-saving skills and make a difference
+            We&apos;re here to help you learn life-saving skills and make a difference
           </motion.p>
         </motion.div>
       </div>

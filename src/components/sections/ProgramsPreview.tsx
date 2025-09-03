@@ -11,7 +11,7 @@ const locations = [
   "Govandi Slum Area",
   "Airport Staff",
   "Custom and CISF Staff",
-  "St. Xavier's College"
+  "St. Xavier&apos;s College"
 ];
 
 export function ProgramsPreview() {

@@ -11,7 +11,7 @@ const camps = [
   { location: "Mumbai", groups: ["Govandi Slum Community", "Residents Association"] },
   { location: "Mumbai", groups: ["Airport Staff", "Ground Handling Teams"] },
   { location: "Mumbai", groups: ["Customs & CISF", "Security Personnel"] },
-  { location: "Mumbai", groups: ["St. Xavier's College", "Students & Faculty"] }
+  { location: "Mumbai", groups: ["St. Xavier&apos;s College", "Students & Faculty"] }
 ];
 
 export function CampsList() {

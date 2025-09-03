@@ -75,7 +75,7 @@ export function ContactForm() {
                 Let's Start a Conversation
               </h2>
               <p className="font-body text-lg text-primary-100">
-                We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.
+                We&apos;d love to hear from you. Fill out the form below and we&apos;ll get back to you as soon as possible.
               </p>
             </div>
 
@@ -92,7 +92,7 @@ export function ContactForm() {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-1">Message Sent Successfully!</h3>
-                    <p className="text-sm">Thank you for reaching out. We'll get back to you soon.</p>
+                    <p className="text-sm">Thank you for reaching out. We&apos;ll get back to you soon.</p>
                   </div>
                 </motion.div>
               )}
