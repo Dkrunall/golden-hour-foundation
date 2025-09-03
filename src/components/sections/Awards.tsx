@@ -55,12 +55,12 @@ export function Awards() {
             <span>Recognition</span>
           </motion.div>
           
-          <h2 className="font-heading text-4xl lg:text-6xl font-bold text-gray-900 mb-6 text-balance">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 text-balance">
             Awards &{" "}
             <span className="gradient-text bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">Recognition</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mx-auto mb-6"></div>
-          <p className="font-body text-xl text-gray-600 max-w-3xl mx-auto text-balance">
+          <div className="w-16 sm:w-20 lg:w-24 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mx-auto mb-6"></div>
+          <p className="font-body text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto text-balance">
             Celebrating our achievements in advancing healthcare education and community service excellence
           </p>
         </motion.div>
@@ -111,7 +111,7 @@ export function Awards() {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.7 + index * 0.1, duration: 0.5 }}
-                      className="font-heading text-xl font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      className="font-heading text-lg sm:text-xl font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     >
                       {award.title}
                     </motion.h3>
@@ -142,8 +142,8 @@ export function Awards() {
               <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4">
                 <Trophy className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold mb-2">15+</div>
-              <div className="font-body text-primary-100 font-medium">Awards Received</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-2">15+</div>
+              <div className="font-body text-primary-100 font-medium text-sm sm:text-base">Awards Received</div>
             </motion.div>
 
             <motion.div
@@ -156,8 +156,8 @@ export function Awards() {
               <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4">
                 <Star className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold mb-2">5</div>
-              <div className="font-body text-primary-100 font-medium">Years of Excellence</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-2">5</div>
+              <div className="font-body text-primary-100 font-medium text-sm sm:text-base">Years of Excellence</div>
             </motion.div>
 
             <motion.div
@@ -170,8 +170,8 @@ export function Awards() {
               <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4">
                 <Award className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold mb-2">100%</div>
-              <div className="font-body text-primary-100 font-medium">Recognition Rate</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-2">100%</div>
+              <div className="font-body text-primary-100 font-medium text-sm sm:text-base">Recognition Rate</div>
             </motion.div>
 
             <motion.div
@@ -184,17 +184,17 @@ export function Awards() {
               <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-4">
                 <Medal className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold mb-2">Top</div>
-              <div className="font-body text-primary-100 font-medium">Healthcare NGO</div>
+              <div className="text-2xl sm:text-3xl font-bold mb-2">Top</div>
+              <div className="font-body text-primary-100 font-medium text-sm sm:text-base">Healthcare NGO</div>
             </motion.div>
           </div>
 
           {/* Bottom Message */}
           <div className="text-center mt-8 pt-8 border-t border-white/20">
-            <h3 className="font-heading text-2xl font-bold mb-3">
+            <h3 className="font-heading text-xl sm:text-2xl font-bold mb-3">
               Committed to Excellence in Healthcare Education
             </h3>
-            <p className="font-body text-primary-100 max-w-3xl mx-auto">
+            <p className="font-body text-primary-100 max-w-3xl mx-auto text-sm sm:text-base">
               These awards reflect our unwavering dedication to saving lives through education, training, and community service. Every recognition motivates us to reach more communities and save more lives.
             </p>
           </div>

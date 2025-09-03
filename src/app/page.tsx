@@ -6,6 +6,7 @@ import { OurDoctors } from "@/components/sections/OurDoctors";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Awards } from "@/components/sections/Awards";
 import { MediaPreview } from "@/components/sections/MediaPreview";
+import { NewsGallery } from "@/components/sections/NewsGallery";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Testimonials />
       <Awards />
       <MediaPreview />
+      <NewsGallery />
     </>
   );
 }

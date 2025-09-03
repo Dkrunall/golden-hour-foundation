@@ -70,13 +70,13 @@ export function Founders() {
             <Users className="w-5 h-5 mr-2" />
             Leadership Team
           </motion.div>
-          <h2 className="font-heading text-4xl lg:text-5xl xl:text-6xl font-bold mb-6">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Meet Our{" "}
             <span className="gradient-text bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">
               Founders
             </span>
           </h2>
-          <p className="font-body text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="font-body text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Visionary leaders dedicated to transforming emergency preparedness and saving lives through innovative training programs
           </p>
         </motion.div>
@@ -118,12 +118,12 @@ export function Founders() {
                 <div className="p-8">
                   <div className="flex items-center mb-4">
                     <div className="w-3 h-3 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mr-3" />
-                    <h3 className="font-heading text-2xl font-bold text-gray-900">
+                    <h3 className="font-heading text-xl sm:text-2xl font-bold text-gray-900">
                       {founder.name}
                     </h3>
                   </div>
-                  <p className="font-medium text-lg text-primary-600 mb-4">{founder.role}</p>
-                  <p className="font-body text-gray-600 leading-relaxed">{founder.bio}</p>
+                  <p className="font-medium text-base sm:text-lg text-primary-600 mb-4">{founder.role}</p>
+                  <p className="font-body text-sm sm:text-base text-gray-600 leading-relaxed">{founder.bio}</p>
                   
                   <div className="flex items-center mt-6 pt-6 border-t border-gray-100">
                     <Star className="w-5 h-5 text-yellow-500 mr-2" />
@@ -143,13 +143,13 @@ export function Founders() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h3 className="font-heading text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h3 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Our Expert{" "}
             <span className="gradient-text bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">
               Advisors
             </span>
           </h3>
-          <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="font-body text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
             Renowned professionals providing strategic guidance and expertise
           </p>
         </motion.div>
@@ -170,8 +170,8 @@ export function Founders() {
                   <div className={`w-16 h-16 mx-auto mb-4 bg-gradient-to-br ${advisor.color} rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
-                  <h4 className="font-heading font-bold text-gray-900 mb-2 text-lg">{advisor.name}</h4>
-                  <p className="font-body text-sm text-gray-600 leading-relaxed">{advisor.credentials}</p>
+                  <h4 className="font-heading font-bold text-gray-900 mb-2 text-base sm:text-lg">{advisor.name}</h4>
+                  <p className="font-body text-xs sm:text-sm text-gray-600 leading-relaxed">{advisor.credentials}</p>
                   
                   <div className="mt-4 pt-4 border-t border-gray-100">
                     <div className="flex items-center justify-center">

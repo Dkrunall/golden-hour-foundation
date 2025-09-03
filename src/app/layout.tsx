@@ -30,6 +30,11 @@ export const metadata: Metadata = {
   description: "Empowering communities with first aid and CPR awareness since 2018. Professional training, free medical camps, and emergency services across India.",
   keywords: ["first aid", "CPR training", "medical camps", "emergency services", "health awareness"],
   authors: [{ name: "Golden Hour Foundation" }],
+  icons: {
+    icon: [{ url: '/logo.png' }, { url: '/icon', type: 'image/png' }],
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -37,6 +42,14 @@ export const metadata: Metadata = {
     siteName: "Golden Hour Foundation",
     title: "Golden Hour Foundation - Save Golden Hour, Save Life",
     description: "Empowering communities with first aid and CPR awareness since 2018.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Golden Hour Foundation Logo",
+      },
+    ],
   },
 };
 
@@ -47,6 +60,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${nunitoSans.variable}`}>
+      <head>
+        <link rel="icon" href="/logo.png" type="image/png" />
+        <link rel="shortcut icon" href="/logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/logo.png" />
+      </head>
       <body className="min-h-screen bg-white">
         <Header />
         <main>

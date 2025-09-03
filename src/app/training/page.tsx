@@ -3,6 +3,7 @@ import { TrainingHero } from "@/components/sections/TrainingHero";
 import { TrainingSyllabus } from "@/components/sections/TrainingSyllabus";
 import { TrainingPrograms } from "@/components/sections/TrainingPrograms";
 import { TheoryPractical } from "@/components/sections/TheoryPractical";
+import { TrainingGallery } from "@/components/sections/TrainingGallery";
 import { Awards } from "@/components/sections/Awards";
 import { MediaPreview } from "@/components/sections/MediaPreview";
 
@@ -18,6 +19,7 @@ export default function TrainingPage() {
       <TrainingSyllabus />
       <TrainingPrograms />
       <TheoryPractical />
+      <TrainingGallery />
     </>
   );
 }

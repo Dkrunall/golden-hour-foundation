@@ -53,13 +53,13 @@ export function TheoryPractical() {
             <BookOpen className="w-5 h-5 mr-2" />
             Comprehensive Curriculum
           </motion.div>
-          <h2 className="font-heading text-4xl lg:text-5xl xl:text-6xl font-bold mb-6">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Theory &{" "}
             <span className="gradient-text bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent">
               Practical
             </span>
           </h2>
-          <p className="font-body text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="font-body text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Comprehensive training covering both theoretical knowledge and hands-on practical skills
           </p>
         </motion.div>
@@ -78,8 +78,8 @@ export function TheoryPractical() {
                 <BookOpen className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h3 className="font-heading text-3xl font-bold text-gray-900">Theory</h3>
-                <p className="font-body text-gray-600">Essential knowledge and concepts</p>
+                <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-900">Theory</h3>
+                <p className="font-body text-sm sm:text-base text-gray-600">Essential knowledge and concepts</p>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ export function TheoryPractical() {
                      index < 12 ? <Zap className="w-4 h-4 text-white" /> :
                      <Heart className="w-4 h-4 text-white" />}
                   </div>
-                  <span className="font-body text-gray-800 font-medium leading-relaxed">{topic}</span>
+                  <span className="font-body text-gray-800 font-medium leading-relaxed text-sm sm:text-base">{topic}</span>
                 </motion.div>
               ))}
             </div>
@@ -118,8 +118,8 @@ export function TheoryPractical() {
                 <Activity className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h3 className="font-heading text-3xl font-bold text-gray-900">Practical</h3>
-                <p className="font-body text-gray-600">Hands-on training and skills</p>
+                <h3 className="font-heading text-2xl sm:text-3xl font-bold text-gray-900">Practical</h3>
+                <p className="font-body text-sm sm:text-base text-gray-600">Hands-on training and skills</p>
               </div>
             </div>
 
@@ -136,7 +136,7 @@ export function TheoryPractical() {
                   <div className="w-8 h-8 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-lg flex items-center justify-center mr-4 mt-0.5 group-hover:scale-110 transition-transform duration-300">
                     <Activity className="w-4 h-4 text-white" />
                   </div>
-                  <span className="font-body text-gray-800 font-medium leading-relaxed">{skill}</span>
+                  <span className="font-body text-gray-800 font-medium leading-relaxed text-sm sm:text-base">{skill}</span>
                 </motion.div>
               ))}
             </div>
@@ -156,24 +156,24 @@ export function TheoryPractical() {
               <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <BookOpen className="w-6 h-6 text-white" />
               </div>
-              <div className="text-2xl font-bold text-gray-900 mb-2">14+</div>
-              <div className="text-gray-600 font-medium">Theory Topics</div>
+              <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">14+</div>
+              <div className="text-gray-600 font-medium text-sm sm:text-base">Theory Topics</div>
             </div>
             
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
               <div className="w-12 h-12 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Activity className="w-6 h-6 text-white" />
               </div>
-              <div className="text-2xl font-bold text-gray-900 mb-2">8+</div>
-              <div className="text-gray-600 font-medium">Practical Skills</div>
+              <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">8+</div>
+              <div className="text-gray-600 font-medium text-sm sm:text-base">Practical Skills</div>
             </div>
             
             <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
               <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <Heart className="w-6 h-6 text-white" />
               </div>
-              <div className="text-2xl font-bold text-gray-900 mb-2">100%</div>
-              <div className="text-gray-600 font-medium">Life-Saving Focus</div>
+              <div className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">100%</div>
+              <div className="text-gray-600 font-medium text-sm sm:text-base">Life-Saving Focus</div>
             </div>
           </div>
         </motion.div>

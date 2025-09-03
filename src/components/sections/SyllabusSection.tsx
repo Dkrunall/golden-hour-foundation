@@ -41,10 +41,10 @@ export function SyllabusSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             Training Syllabus
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
             Comprehensive curriculum covering both theoretical knowledge and practical skills
           </p>
         </motion.div>
@@ -62,7 +62,7 @@ export function SyllabusSection() {
                 <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BookOpen className="w-8 h-8 text-primary-600" />
                 </div>
-                <CardTitle className="text-2xl">Theory</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl">Theory</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -76,7 +76,7 @@ export function SyllabusSection() {
                       className="flex items-center p-3 bg-gray-50 rounded-lg"
                     >
                       <span className="w-2 h-2 bg-primary-500 rounded-full mr-3 flex-shrink-0"></span>
-                      <span className="text-gray-700">{topic}</span>
+                      <span className="text-gray-700 text-sm sm:text-base">{topic}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -96,7 +96,7 @@ export function SyllabusSection() {
                 <div className="w-16 h-16 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Stethoscope className="w-8 h-8 text-secondary-600" />
                 </div>
-                <CardTitle className="text-2xl">Practical</CardTitle>
+                <CardTitle className="text-xl sm:text-2xl">Practical</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-3">
@@ -110,7 +110,7 @@ export function SyllabusSection() {
                       className="flex items-center p-3 bg-gray-50 rounded-lg"
                     >
                       <span className="w-2 h-2 bg-secondary-500 rounded-full mr-3 flex-shrink-0"></span>
-                      <span className="text-gray-700">{topic}</span>
+                      <span className="text-gray-700 text-sm sm:text-base">{topic}</span>
                     </motion.div>
                   ))}
                 </div>

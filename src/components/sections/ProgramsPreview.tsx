@@ -37,18 +37,18 @@ export function ProgramsPreview() {
             <span>Services</span>
           </motion.div>
           
-          <h2 className="font-heading text-4xl lg:text-6xl font-bold text-gray-900 mb-6 text-balance">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 text-balance">
             Our{" "}
             <span className="gradient-text bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">Services</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mx-auto mb-6"></div>
+          <div className="w-16 sm:w-20 lg:w-24 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mx-auto mb-6"></div>
           
           <motion.h3
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="font-heading text-2xl lg:text-3xl font-semibold text-primary-600 mb-8"
+            className="font-heading text-xl sm:text-2xl lg:text-3xl font-semibold text-primary-600 mb-8"
           >
             CONDUCTED FREE CAMPS AT
           </motion.h3>
@@ -71,7 +71,7 @@ export function ProgramsPreview() {
                     <MapPin className="w-5 h-5 text-white" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-heading font-medium text-gray-900 text-base">
+                    <h3 className="font-heading font-medium text-gray-900 text-sm sm:text-base">
                       {location}
                     </h3>
                     <p className="font-body text-gray-500 text-xs">Free Training Camp</p>
@@ -92,10 +92,10 @@ export function ProgramsPreview() {
         >
           {/* Title */}
           <div className="text-center mb-8">
-            <h3 className="font-heading text-2xl font-bold text-gray-900 mb-3">
+            <h3 className="font-heading text-xl sm:text-2xl font-bold text-gray-900 mb-3">
               Making Communities Safer, One Training at a Time
             </h3>
-            <p className="font-body text-gray-600 max-w-2xl mx-auto">
+            <p className="font-body text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
               Our free training camps have reached diverse communities across India, 
               empowering individuals with life-saving first aid and CPR skills.
             </p>
@@ -113,8 +113,8 @@ export function ProgramsPreview() {
               <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-primary-600 mb-2">8+</div>
-              <div className="font-body text-gray-600 font-medium">Locations Covered</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary-600 mb-2">8+</div>
+              <div className="font-body text-gray-600 font-medium text-sm sm:text-base">Locations Covered</div>
             </motion.div>
 
             <motion.div 
@@ -127,8 +127,8 @@ export function ProgramsPreview() {
               <div className="w-16 h-16 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-secondary-600 mb-2">1000+</div>
-              <div className="font-body text-gray-600 font-medium">People Trained</div>
+              <div className="text-2xl sm:text-3xl font-bold text-secondary-600 mb-2">1000+</div>
+              <div className="font-body text-gray-600 font-medium text-sm sm:text-base">People Trained</div>
             </motion.div>
 
             <motion.div 
@@ -141,8 +141,8 @@ export function ProgramsPreview() {
               <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-secondary-500 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-8 h-8 text-white" />
               </div>
-              <div className="text-3xl font-bold text-primary-600 mb-2">100%</div>
-              <div className="font-body text-gray-600 font-medium">Free Training</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary-600 mb-2">100%</div>
+              <div className="font-body text-gray-600 font-medium text-sm sm:text-base">Free Training</div>
             </motion.div>
           </div>
         </motion.div>

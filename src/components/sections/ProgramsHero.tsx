@@ -21,8 +21,8 @@ export function ProgramsHero() {
           transition={{ duration: 0.8 }}
           className="text-center text-white max-w-4xl mx-auto"
         >
-          <h1 className="text-4xl lg:text-6xl font-bold mb-6">Our Programs</h1>
-          <p className="text-xl lg:text-2xl text-gray-200">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Our Programs</h1>
+          <p className="text-lg sm:text-xl lg:text-2xl text-gray-200">
             Comprehensive training programs designed to save lives and build safer communities
           </p>
         </motion.div>

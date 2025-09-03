@@ -150,14 +150,14 @@ export function Header() {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 0.7, duration: 0.4 }}
-                      className="pt-6 px-6 border-t border-white/20 space-y-3"
+                      className="pt-6 px-6 border-t border-gray-200 space-y-3"
                     >
-                      <div className="flex items-center space-x-3 text-white/80">
-                        <Phone className="w-4 h-4 text-primary-400" />
+                      <div className="flex items-center space-x-3 text-gray-600">
+                        <Phone className="w-4 h-4 text-primary-500" />
                         <span className="text-sm">+91 22 22067676</span>
                       </div>
-                      <div className="flex items-center space-x-3 text-white/80">
-                        <Mail className="w-4 h-4 text-primary-400" />
+                      <div className="flex items-center space-x-3 text-gray-600">
+                        <Mail className="w-4 h-4 text-primary-500" />
                         <span className="text-sm">drgautambhansali@gmail.com</span>
                       </div>
                     </motion.div>

@@ -54,15 +54,15 @@ export function MissionVision() {
               <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mr-4">
                 <Target className="w-8 h-8 text-white" />
               </div>
-              <h2 className="font-heading text-3xl font-bold text-gray-900">Our Mission</h2>
+              <h2 className="font-heading text-2xl sm:text-3xl font-bold text-gray-900">Our Mission</h2>
             </div>
-            <p className="font-body text-lg text-gray-600 leading-relaxed mb-6">
+            <p className="font-body text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
               Golden Hour Foundation is dedicated to empowering individuals and communities 
               with essential first aid knowledge and emergency response skills. We believe 
               that proper training during the critical &ldquo;golden hour&rdquo; can mean the difference 
               between life and death.
             </p>
-            <p className="font-body text-lg text-gray-600 leading-relaxed">
+            <p className="font-body text-base sm:text-lg text-gray-600 leading-relaxed">
               Our mission is to make life-saving skills accessible to everyone, regardless 
               of their background or location, creating a safer and more prepared society.
             </p>
@@ -80,14 +80,14 @@ export function MissionVision() {
               <div className="w-16 h-16 bg-gradient-to-br from-secondary-500 to-secondary-600 rounded-2xl flex items-center justify-center mr-4">
                 <Eye className="w-8 h-8 text-white" />
               </div>
-              <h2 className="font-heading text-3xl font-bold text-gray-900">Our Vision</h2>
+              <h2 className="font-heading text-2xl sm:text-3xl font-bold text-gray-900">Our Vision</h2>
             </div>
-            <p className="font-body text-lg text-gray-600 leading-relaxed mb-6">
+            <p className="font-body text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
               To create a society where every individual is equipped with the knowledge 
               and confidence to respond effectively to medical emergencies. We envision 
               communities where immediate, appropriate first aid becomes second nature.
             </p>
-            <p className="font-body text-lg text-gray-600 leading-relaxed">
+            <p className="font-body text-base sm:text-lg text-gray-600 leading-relaxed">
               Our goal is to significantly reduce preventable deaths and improve health 
               outcomes across India through comprehensive emergency preparedness.
             </p>
@@ -113,12 +113,12 @@ export function MissionVision() {
             <span>Our Objectives</span>
           </motion.div>
           
-          <h2 className="font-heading text-4xl lg:text-6xl font-bold text-gray-900 mb-6 text-balance">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 text-balance">
             How We{" "}
             <span className="gradient-text bg-gradient-to-r from-primary-400 to-secondary-400 bg-clip-text text-transparent">Make Impact</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mx-auto mb-6"></div>
-          <p className="font-body text-xl text-gray-600 max-w-3xl mx-auto text-balance">
+          <div className="w-16 sm:w-20 lg:w-24 h-1 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-full mx-auto mb-6"></div>
+          <p className="font-body text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto text-balance">
             Our comprehensive approach focuses on education, awareness, and practical training to build safer communities
           </p>
         </motion.div>
@@ -137,10 +137,10 @@ export function MissionVision() {
               <div className={`w-16 h-16 bg-gradient-to-br ${objective.gradient} rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                 <objective.icon className="w-8 h-8 text-white" />
               </div>
-              <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3 text-center group-hover:text-primary-600 transition-colors duration-300">
+              <h3 className="font-heading text-lg sm:text-xl font-semibold text-gray-900 mb-3 text-center group-hover:text-primary-600 transition-colors duration-300">
                 {objective.title}
               </h3>
-              <p className="font-body text-gray-600 text-center leading-relaxed">{objective.description}</p>
+              <p className="font-body text-sm sm:text-base text-gray-600 text-center leading-relaxed">{objective.description}</p>
             </motion.div>
           ))}
         </div>

@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 
 export function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ['/1.jpeg', '/2.jpeg'];
+  const images = ['/1.jpeg', '/new/n3.jpeg', '/new/n5.jpeg','/new/n6.jpeg'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,7 +21,7 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background with Image Slider - Light Black Overlay */}
+      {/* Background with Image Slider */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/30 z-10"></div>
         <div className="absolute inset-0 hero-pattern z-20"></div>
@@ -68,7 +68,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-heading text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-[1.1] text-white max-w-5xl mx-auto whitespace-nowrap"
+            className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-[1.1] text-white max-w-5xl mx-auto"
           >
             Save{" "}
             <span className="relative inline-block">

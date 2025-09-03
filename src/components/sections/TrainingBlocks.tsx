@@ -47,10 +47,10 @@ export function TrainingBlocks() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
             First Aid Training Programs
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto">
             Specialized training designed for different environments and communities
           </p>
         </motion.div>
@@ -76,12 +76,12 @@ export function TrainingBlocks() {
                   <div className={`p-8 lg:p-12 ${index % 2 === 1 ? 'lg:col-start-1' : ''}`}>
                     <div className="flex items-center mb-4">
                       <program.icon className="w-8 h-8 text-primary-600 mr-3" />
-                      <h3 className="text-2xl font-bold text-gray-900">{program.title}</h3>
+                      <h3 className="text-xl sm:text-2xl font-bold text-gray-900">{program.title}</h3>
                     </div>
-                    <p className="text-gray-600 mb-6">{program.description}</p>
+                    <p className="text-sm sm:text-base text-gray-600 mb-6">{program.description}</p>
                     <ul className="space-y-2 mb-6">
                       {program.features.map((feature) => (
-                        <li key={feature} className="flex items-center text-gray-700">
+                        <li key={feature} className="flex items-center text-gray-700 text-sm sm:text-base">
                           <Award className="w-4 h-4 text-primary-600 mr-2 flex-shrink-0" />
                           {feature}
                         </li>

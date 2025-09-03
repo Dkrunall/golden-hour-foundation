@@ -3,53 +3,38 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Camera, Images, Video } from "lucide-react";
-import { useState, useEffect } from "react";
 
 export function GalleryHero() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ['/1.jpeg', '/2.jpeg'];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
-
-    return () => clearInterval(interval);
-  }, [images.length]);
-
   return (
     <section className="relative h-[600px] flex items-center justify-center overflow-hidden pt-20">
-      {/* Background with Image Slider - Light Black Overlay */}
+      {/* Background with Static Image */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-black/30 z-10"></div>
         <div className="absolute inset-0 hero-pattern z-20"></div>
         
-        {/* Image Slider */}
+        {/* Static Background Image */}
         <div className="relative w-full h-full overflow-hidden">
-          {images.map((image, index) => (
-            <motion.div
-              key={image}
-              className="absolute inset-0"
-              initial={{ opacity: 0 }}
-              animate={{ 
-                opacity: index === currentImageIndex ? 1 : 0,
-                scale: index === currentImageIndex ? 1.1 : 1
-              }}
-              transition={{ 
-                opacity: { duration: 1.5, ease: "easeInOut" },
-                scale: { duration: 10, ease: "linear" }
-              }}
-            >
-              <Image
-                src={image}
-                alt={`Gallery Background ${index + 1}`}
-                fill
-                className="object-cover"
-                priority={index === 0}
-                quality={90}
-              />
-            </motion.div>
-          ))}
+          <motion.div
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ 
+              opacity: 1,
+              scale: 1.1
+            }}
+            transition={{ 
+              opacity: { duration: 1.5, ease: "easeInOut" },
+              scale: { duration: 10, ease: "linear" }
+            }}
+            className="absolute inset-0"
+          >
+            <Image
+              src="/1.jpeg"
+              alt="Gallery Hero Background"
+              fill
+              className="object-cover"
+              priority
+              quality={90}
+            />
+          </motion.div>
         </div>
       </div>
 
@@ -77,7 +62,7 @@ export function GalleryHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-heading text-6xl xl:text-7xl font-bold mb-4 leading-[1.1] text-white max-w-5xl mx-auto whitespace-nowrap"
+            className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 leading-[1.1] text-white max-w-5xl mx-auto"
           >
             Our{" "}
             <span className="relative inline-block">

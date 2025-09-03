@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 export function AboutHero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ['/aboutsec.jpeg', '/1.jpeg', '/2.jpeg'];
+  const images = ['/aboutsec.jpeg', '/1.jpeg', '/new/n1.jpeg', '/new/n5.jpeg'];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -77,7 +77,7 @@ export function AboutHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="font-heading text-6xl xl:text-7xl font-bold mb-4 leading-[1.1] text-white max-w-5xl mx-auto whitespace-nowrap"
+            className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 leading-[1.1] text-white max-w-5xl mx-auto"
           >
             About{" "}
             <span className="relative inline-block">

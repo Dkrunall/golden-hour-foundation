@@ -48,13 +48,6 @@ const mediaItems: MediaItem[] = [
     category: "Training"
   },
   {
-    id: 5,
-    type: "image",
-    src: "/2.jpeg",
-    title: "Community Impact",
-    category: "Training"
-  },
-  {
     id: 6,
     type: "image",
     src: "/aboutsec.jpeg",
@@ -115,10 +108,123 @@ const mediaItems: MediaItem[] = [
     category: "Videos",
     videoId: "vAt63upFs0Q",
     embedUrl: "https://www.youtube.com/embed/vAt63upFs0Q"
+  },
+  // Newspaper Articles
+  {
+    id: 16,
+    type: "image",
+    src: "/new/n1.jpeg",
+    title: "Press Coverage - Foundation Recognition",
+    category: "Press"
+  },
+  {
+    id: 17,
+    type: "image",
+    src: "/new/n2.jpeg",
+    title: "Media Feature - Training Programs",
+    category: "Press"
+  },
+  {
+    id: 18,
+    type: "image",
+    src: "/new/n3.jpeg",
+    title: "Newspaper Article - Community Impact",
+    category: "Press"
+  },
+  {
+    id: 19,
+    type: "image",
+    src: "/new/n4.jpeg",
+    title: "Press Release - Medical Camp Success",
+    category: "Press"
+  },
+  {
+    id: 20,
+    type: "image",
+    src: "/new/n5.jpeg",
+    title: "Media Coverage - Life-Saving Training",
+    category: "Press"
+  },
+  {
+    id: 21,
+    type: "image",
+    src: "/new/n6.jpeg",
+    title: "Press Feature - Emergency Response",
+    category: "Press"
+  },
+  {
+    id: 22,
+    type: "image",
+    src: "/new/n7.jpeg",
+    title: "News Article - First Aid Initiative",
+    category: "Press"
+  },
+  {
+    id: 23,
+    type: "image",
+    src: "/new/n8.jpeg",
+    title: "Press Coverage - Health Awareness",
+    category: "Press"
+  },
+  {
+    id: 24,
+    type: "image",
+    src: "/new/n9.jpeg",
+    title: "Media Report - Training Excellence",
+    category: "Press"
+  },
+  {
+    id: 25,
+    type: "image",
+    src: "/new/n10.jpeg",
+    title: "Newspaper Feature - Golden Hour Foundation",
+    category: "Press"
+  },
+  {
+    id: 26,
+    type: "image",
+    src: "/new/n11.jpeg",
+    title: "Press Article - Medical Training Impact",
+    category: "Press"
+  },
+  {
+    id: 27,
+    type: "image",
+    src: "/new/n12.jpeg",
+    title: "Media Coverage - Community Outreach",
+    category: "Press"
+  },
+  {
+    id: 28,
+    type: "image",
+    src: "/new/n13.jpeg",
+    title: "News Report - Emergency Training",
+    category: "Press"
+  },
+  {
+    id: 29,
+    type: "image",
+    src: "/new/n14.jpeg",
+    title: "Press Feature - Healthcare Initiative",
+    category: "Press"
+  },
+  {
+    id: 30,
+    type: "image",
+    src: "/new/n15.jpeg",
+    title: "Media Article - First Aid Excellence",
+    category: "Press"
+  },
+  {
+    id: 31,
+    type: "image",
+    src: "/new/n16.jpeg",
+    title: "Newspaper Coverage - Foundation Success",
+    category: "Press"
   }
 ];
 
-const filters = ["All", "Images", "Videos"];
+const filters = ["All", "Images", "Videos", "Training", "Awards", "Press"];
 
 export function GalleryGrid() {
   const [selectedFilter, setSelectedFilter] = useState("All");
@@ -196,7 +302,7 @@ export function GalleryGrid() {
 
                       {/* Video Content */}
                       <div className="p-6">
-                        <h3 className="font-heading text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors duration-300">
+                        <h3 className="font-heading text-lg sm:text-xl font-semibold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors duration-300">
                           {item.title}
                         </h3>
                         <div className="flex items-center justify-between">
@@ -252,7 +358,7 @@ export function GalleryGrid() {
                           whileInView={{ opacity: 1, y: 0 }}
                           viewport={{ once: true }}
                           transition={{ delay: 0.7 + index * 0.1, duration: 0.5 }}
-                          className="font-heading text-xl font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 mb-2"
+                          className="font-heading text-lg sm:text-xl font-bold text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 mb-2"
                         >
                           {item.title}
                         </motion.h3>
@@ -307,7 +413,7 @@ export function GalleryGrid() {
                   <X className="w-8 h-8" />
                 </button>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 rounded-b-lg">
-                  <h3 className="text-white text-xl font-semibold mb-2">{selectedImage.title}</h3>
+                  <h3 className="text-white text-lg sm:text-xl font-semibold mb-2">{selectedImage.title}</h3>
                   <span className="inline-block px-3 py-1 bg-primary-500 text-white text-sm rounded">
                     {selectedImage.category === "Awards" ? "Awards" : "Image"}
                   </span>

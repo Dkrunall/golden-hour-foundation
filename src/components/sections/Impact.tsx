@@ -83,7 +83,7 @@ export function Impact() {
             <span className="text-gray-700 font-medium">Our Impact</span>
           </motion.div>
           
-          <h2 className="text-4xl lg:text-6xl font-black text-white mb-6 text-balance">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black text-white mb-6 text-balance">
             Lives Changed,{" "}
             <span className="gradient-text">Communities Strengthened</span>
           </h2>
@@ -122,16 +122,16 @@ export function Impact() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: stat.delay + 0.3, duration: 0.8, type: "spring" }}
-                  className={`text-5xl lg:text-6xl font-black mb-4 bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent`}
+                  className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent`}
                 >
                   {stat.number}
                 </motion.div>
 
                 {/* Label */}
-                <h3 className="text-xl font-bold text-gray-800 mb-3">{stat.label}</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">{stat.label}</h3>
                 
                 {/* Description */}
-                <p className="text-gray-600 leading-relaxed">{stat.description}</p>
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{stat.description}</p>
                 
                 {/* Progress Bar */}
                 <motion.div
@@ -157,10 +157,10 @@ export function Impact() {
           className="text-center mt-16"
         >
           <div className="glass-card p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+            <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">
               Want to be part of these numbers?
             </h3>
-            <p className="text-gray-600 mb-6">
+            <p className="text-sm sm:text-base text-gray-600 mb-6">
               Join our mission and help us reach even more communities with life-saving training.
             </p>
             <motion.a
