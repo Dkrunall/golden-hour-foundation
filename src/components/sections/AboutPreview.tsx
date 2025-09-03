@@ -75,7 +75,7 @@ export function AboutPreview() {
               </p>
               
               <p className="font-body text-lg">
-                The Golden Hour Foundation was launched in the year 2018 with our motto being <span className="font-semibold text-primary-600">"Save Golden Hour, Save Life"</span>. The head office is located at Wadala. The Institution is committed to create awareness about First aid and CPR techniques.
+                The Golden Hour Foundation was launched in the year 2018 with our motto being <span className="font-semibold text-primary-600">&ldquo;Save Golden Hour, Save Life&rdquo;</span>. The head office is located at Wadala. The Institution is committed to create awareness about First aid and CPR techniques.
               </p>
             </div>
           </motion.div>
