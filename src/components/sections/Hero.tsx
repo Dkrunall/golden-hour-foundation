@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 
 export function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const images = ['/1.jpeg', '/new/n3.jpeg', '/new/n5.jpeg','/new/n6.jpeg'];
+  const images = ['/1.jpeg', '/new/n3.jpeg', '/new/n4.jpeg','/new/n6.jpeg'];
 
   useEffect(() => {
     const interval = setInterval(() => {
