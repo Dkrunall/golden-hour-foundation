@@ -10,13 +10,17 @@ const testimonialVideos = [
     embedUrl: "https://www.youtube.com/embed/C86gZrf3Yf4",
     thumbnail: `https://img.youtube.com/vi/C86gZrf3Yf4/maxresdefault.jpg`,
     channel: "Gautam Bhansali's Golden Hour Foundation",
+    title: "Golden Hour Foundation Training Program",
+    description: "Learn life-saving first aid techniques with our expert medical team. This comprehensive training covers CPR, emergency response, and critical care basics."
   },
   {
     id: "vAt63upFs0Q", 
     url: "https://www.youtube.com/watch?v=vAt63upFs0Q",
     embedUrl: "https://www.youtube.com/embed/vAt63upFs0Q",
     thumbnail: `https://img.youtube.com/vi/vAt63upFs0Q/maxresdefault.jpg`,
-    channel: "Gautam Bhansali's Golden Hour Foundation", 
+    channel: "Gautam Bhansali's Golden Hour Foundation",
+    title: "Community Impact Stories",
+    description: "Real stories from community members who have been trained in first aid and CPR. Discover how our programs are making a difference in emergency situations."
   }
 ];
 
